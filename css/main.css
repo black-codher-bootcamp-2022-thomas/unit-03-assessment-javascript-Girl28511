@@ -1,0 +1,112 @@
+/* 
+The container div must have the id modal-container
+The date must have the id modal-date
+The title must have the id modal-title
+The image must have the id modal-image
+The full description must have the id modal-full-description
+The element that closes the modal must have the id modal-close-button */
+
+h1 {
+  font-size: 40px;
+  color: rgba(7, 58, 7, 0.909);
+}
+
+#modal-container {
+    background: white;
+    border-radius: 2em;
+    position: absolute;
+    left: 50%; 
+  }
+
+
+#modal-date {
+    background: white;
+    border-radius: 2em;
+    position: absolute;
+    left: 50%; 
+  }
+
+#modal-title {
+    background: white;
+    border-radius: 2em;
+    position: absolute;
+    left: 50%; 
+  }
+
+#modal-image {
+    background: white;
+    border-radius: 2em;
+    position: absolute;
+    left: 50%; 
+  }
+  
+#modal-full-description  {
+  position: relative;
+  width: 50em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#modal-close-button {
+  font-size: 20px;
+  font-style: italic;
+  color: black;
+}
+
+
+/* 1. A `div` with the class name `timeline-item`. This `div` is your container for your summary card and everything for the summary card must be inside of it. Inside the `div` should be:
+1. `h2` with the class name `timeline-item-title`. The title of each timeline item needs to be here
+1. `span` with the class name `timeline-item-date`. This should have the date of each timeline item
+1. The element that displays the summary text must have the class name `timeline-item-summary`
+1. The element that opens the modal so that a visitor can see full information must have the class name `timeline-item-more-info` */
+
+.timeline-item {
+  border-top:solid;
+  border-color: black;
+  margin: 0;
+  padding: 30px;
+  counter-increment: section;
+  position: relative;
+  color: white;
+}
+
+.timeline-item-title {
+  border-top:solid;
+  border-color: black;
+  margin: 0;
+  padding: 30px;
+  counter-increment: section;
+  position: relative;
+  color: white;
+}
+
+.timeline-item-date {
+    border-top:solid;
+    border-color: black;
+    margin: 0;
+    padding: 30px;
+    counter-increment: section;
+    position: relative;
+    color: white;
+}
+
+.timeline-item-summary {
+    border-top:solid;
+    border-color: black;
+    margin: 0;
+    padding: 30px;
+    counter-increment: section;
+    position: relative;
+    color: white;
+}
+
+.timeline-item-more-info {
+    border-top:solid;
+    border-color: black;
+    margin: 0;
+    padding: 30px;
+    counter-increment: section;
+    position: relative;
+    color: white;
+}

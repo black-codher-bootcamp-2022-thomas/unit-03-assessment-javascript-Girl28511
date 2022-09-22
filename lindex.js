@@ -1,0 +1,1 @@
+// **As a** user, **I want to** see the summary of each historical item in a summary card, **so that** I can see a brief introduction of each historical item

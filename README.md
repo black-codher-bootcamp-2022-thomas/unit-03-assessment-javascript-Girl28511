@@ -71,7 +71,7 @@ The only HTML you should add to the `body` is in step 1. Everything else should 
 
 ### CSS
 
-All styling (CSS) is completely up to you, but must be in a folder named `css` with a primary stylesheet called `main.css`.
+[x] All styling (CSS) is completely up to you, but must be in a folder named `css` with a primary stylesheet called `main.css`.
 
 ## How to submit
 
