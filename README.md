@@ -1,5 +1,10 @@
 [TODO: Replace with your Netflify status badge]
 
+# Keep in mind accessibility elements for user experience  e.g semantic HTML make sure you differentiate different elements e.g make sure your header is a head vs having lots of DIVS. As someone who is visually impaired for example wouldn't be able to navigate the website. Making sure the HTML is as descriptive as possible. Screen reading / nav bar vs screen/mouse scroll. Making sure your code is accessible from the beginning. 
+
+# Difference between ES5 and ES6. 
+
+
 # JavaScript Assessment
 
 For your unit 3 assessment you are required to work with your study group as an agile team to create an animated interactive timeline for Mayme's Bakery. The interactivity (behaviour/actions) of timeline should be agreed upon by all group members.
