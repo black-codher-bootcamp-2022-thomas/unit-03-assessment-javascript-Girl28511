@@ -4,21 +4,21 @@ const timeline = document.querySelector(".timeline");
 
 function getCard(index) {
   const { date, title, image, details } = dates[index];
-  
+
   const box = document.createElement ("span");
-  const details = document.createElement("p");
-  const title = document.createElement("h2");
+  const detailsTimeline = document.createElement("p");
+  const titleTimeline = document.createElement("h2");
   const openButton = document.createElement ("button");
   const content = document.createElement("p");
-  const date = document.createElement ("span")
-  const image = document.createElement ("img");
+  const dateInfo = document.createElement ("span")
+  const imageInfo = document.createElement ("img");
   const closeButton = document.createElement ("button");
   const header = document.createElement ("header");
 
 /* Adding ID's to the elements created.*/
   box.setAttribute ("id", "modal-full-description");
   content.setAttribute("id", "modal-container");
-  date.setAttribute("id", "modal-date");
+  dateTimeline.setAttribute("id", "modal-date");
   header.setAttribute("id", "modal-title");
   image.setAttribute("id", "modal-image");
   closeButton.setAttribute("id", "modal-close-button");
@@ -31,6 +31,6 @@ function getCard(index) {
   
   // Append each new variables to tags created previously
 
-  modalDate.appendChild(dateText);
+  modalDate.appendChild(dateText);}
   
-  // Closing button event
+  
