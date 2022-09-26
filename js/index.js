@@ -6,7 +6,7 @@ const timeline = document.querySelector(".timeline");
 // index qq
 
 function getCard(index) {
-  const { date, title, image, fullDescription} = dates[index]; // why is image and summary grey  ?
+  const { date, title, image, fullDescription} = dates[index]; // 
 
   // create element has the same variable as the creating ID's and append child 
 

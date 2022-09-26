@@ -76,3 +76,14 @@ The only HTML you should add to the `body` is in step 1. Everything else should 
 ## How to submit
 
 You must push all the code to your group project repo.
+
+
+## Sources used 
+
+https://codepen.io/afa34/pen/BarKQJZ 
+
+https://csslayout.io/zigzag-timeline/
+
+https://getcssscan.com/css-box-shadow-examples
+
+https://timelinedemo.netlify.app 
