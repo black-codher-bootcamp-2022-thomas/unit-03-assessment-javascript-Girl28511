@@ -77,6 +77,8 @@ The only HTML you should add to the `body` is in step 1. Everything else should 
 
 You must push all the code to your group project repo.
 
+# Status badge 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/93fb456b-562f-491c-bf47-28fa3ef29a98/deploy-status)](https://app.netlify.com/sites/annabella-javascript/deploys)
 
 ## Sources used 
 
