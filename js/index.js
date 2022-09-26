@@ -1,4 +1,4 @@
-import { dates } from "./data";
+import { dates } from "./data.js";
 
 const timeline = document.querySelector(".timeline");
 
@@ -15,7 +15,7 @@ function getCard(index) {
   const timelineOpenTitle = document.createElement("h2");
   const timelineOpenDescription = document.createElement("p");
   const timelineOpenImage = document.createElement("img");
-  const closeOpenTimeline = document.createElement("span");
+  const closeOpenTimeline = document.createElement("button");
 
   /* Adding ID's to the elements created.*/
   timelineOpenDescription.setAttribute ("id", "modal-full-description");
@@ -35,6 +35,7 @@ function getCard(index) {
   timelineOpenDate.appendChild(dateText);
   timelineOpenTitle.appendChild(titleText);
   timelineOpenDescription.appendChild(fullInfo); 
+  closeOpenTimeline.appendChild(document.createTextNode('Read less.. '));
 
   timelineOpenBox.appendChild(timelineOpenDate);
   timelineOpenBox.appendChild(timelineOpenImage);
@@ -44,10 +45,7 @@ function getCard(index) {
   // does not have any data from js, will be used later to make close button 
   timelineOpenBox.appendChild(closeOpenTimeline); 
 
-}
-
-closeOpenTimeline.addEventListener(
-  "click",
+  closeOpenTimeline.addEventListener("click",
   (e) => {
     e.preventDefault();
     timeline.removeChild(timelineOpenBox);
@@ -57,6 +55,9 @@ closeOpenTimeline.addEventListener(
 
 timelineOpenBox.style.display = "flex";
 timeline.prepend(timelineOpenBox);
+}
+ 
+
 
 //outside the timeline 
 dates.map(({ date, title, summary }, index) => {
@@ -77,21 +78,19 @@ dates.map(({ date, title, summary }, index) => {
   const dateText = document.createTextNode(date);
   const titleText = document.createTextNode(title);
   const overall = document.createTextNode(summary); 
-  const moreInfo = document.createTextNode(openButton); 
-
+  // const moreInfo = document.createTextNode(openButton); 
+  openButton.appendChild(document.createTextNode('Read more.. '));
   // these babies live under the Text node, so once the data that's been passed through them has been declared above. You need to repass them as 'child' 
 
   margin.appendChild(titleTimeline);
   margin.appendChild(dateInfo);
   margin.appendChild(detailsTimeline);
   margin.appendChild(openButton);
+  // margin.appendChild(openButton);
 
   titleTimeline.appendChild(titleText);
   dateInfo.appendChild(dateText);
   detailsTimeline.appendChild(overall);
-
-  // DIFFERENT 
-  detailsTimeline.appendChild(moreInfo); 
 
 
 openButton.addEventListener(
