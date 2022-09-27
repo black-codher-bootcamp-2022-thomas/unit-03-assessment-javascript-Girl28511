@@ -1,5 +1,10 @@
 [TODO: Replace with your Netflify status badge]
 
+# Keep in mind accessibility elements for user experience  e.g semantic HTML make sure you differentiate different elements e.g make sure your header is a head vs having lots of DIVS. As someone who is visually impaired for example wouldn't be able to navigate the website. Making sure the HTML is as descriptive as possible. Screen reading / nav bar vs screen/mouse scroll. Making sure your code is accessible from the beginning. 
+
+# Difference between ES5 and ES6. 
+
+
 # JavaScript Assessment
 
 For your unit 3 assessment you are required to work with your study group as an agile team to create an animated interactive timeline for Mayme's Bakery. The interactivity (behaviour/actions) of timeline should be agreed upon by all group members.
@@ -66,8 +71,21 @@ The only HTML you should add to the `body` is in step 1. Everything else should 
 
 ### CSS
 
-All styling (CSS) is completely up to you, but must be in a folder named `css` with a primary stylesheet called `main.css`.
+[x] All styling (CSS) is completely up to you, but must be in a folder named `css` with a primary stylesheet called `main.css`.
 
 ## How to submit
 
 You must push all the code to your group project repo.
+
+# Status badge 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/93fb456b-562f-491c-bf47-28fa3ef29a98/deploy-status)](https://app.netlify.com/sites/annabella-javascript/deploys)
+
+## Sources used 
+
+https://codepen.io/afa34/pen/BarKQJZ 
+
+https://csslayout.io/zigzag-timeline/
+
+https://getcssscan.com/css-box-shadow-examples
+
+https://timelinedemo.netlify.app 
