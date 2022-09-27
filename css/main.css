@@ -45,12 +45,11 @@ h2 {
 }
 
 .timeline-item {
-position: relative;
-width: 20em;
-padding: 1em;
-box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-}
-
+  position: relative;
+  width: 20em;
+  padding: 1em;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  }
 
 .timeline-item-more-info {
   background-color: #ffffff; 

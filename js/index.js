@@ -31,7 +31,7 @@ function getCard(index) {
   const titleText = document.createTextNode(title);
   const fullInfo = document.createTextNode (fullDescription); // link to data js ()
 
-// image is not re-defined because? ??? 
+// image is not re-defined because ??? 
   timelineOpenDate.appendChild(dateText);
   timelineOpenTitle.appendChild(titleText);
   timelineOpenDescription.appendChild(fullInfo); 
@@ -52,11 +52,10 @@ function getCard(index) {
   },
   false
 );
-
-timelineOpenBox.style.display = "flex";
-timeline.prepend(timelineOpenBox);
+  timelineOpenBox.style.display = "flex";
+  timeline.prepend(timelineOpenBox);
+  
 }
- 
 
 
 //outside the timeline 
@@ -66,7 +65,6 @@ dates.map(({ date, title, summary }, index) => {
   const detailsTimeline = document.createElement("p");
   const openButton = document.createElement ("button");
   const dateInfo = document.createElement("span");
-
 
   margin.setAttribute ("class", "timeline-item");
   titleTimeline.setAttribute ("class", "timeline-item-title");
@@ -91,9 +89,8 @@ dates.map(({ date, title, summary }, index) => {
   titleTimeline.appendChild(titleText);
   dateInfo.appendChild(dateText);
   detailsTimeline.appendChild(overall);
-
-
-openButton.addEventListener(
+  
+  openButton.addEventListener(
   "click",
   (e) => {
     e.preventDefault();
@@ -101,9 +98,9 @@ openButton.addEventListener(
     if (index) getCard(index);
   },
   false
-);
-
-timeline.appendChild(margin);
+  );
+  
+  timeline.appendChild(margin);
 });
 
 // // User clicks on read more/ read less on timeline 
